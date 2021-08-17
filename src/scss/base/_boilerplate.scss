@@ -1,0 +1,31 @@
+@use '../abstracts' as abs;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: abs.$font;
+  background-color: abs.$paleBlue;
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: abs.$brightBlue;
+}
+
+img {
+  width: 100%;
+}

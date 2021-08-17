@@ -1,0 +1,93 @@
+@use '../abstracts' as abs;
+
+.card {
+  background-color: abs.$veryPaleBlue;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 25px;
+
+  &__img {
+    height: 10rem;
+    position: relative;
+
+    img {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+  }
+
+  &__content {
+    padding: 2.1875rem 1.5rem;
+
+    &--text {
+      text-align: center;
+
+      h2 {
+        color: abs.$darkBlue;
+        font-weight: 900;
+      }
+
+      p {
+        color: abs.$desaturatedBlue;
+        font-weight: 500;
+        margin-top: 1rem;
+      }
+    }
+
+    &--plan {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.375rem;
+      background-color: abs.$veryPaleBlue;
+      padding: 0.9375rem;
+      border-radius: 15px;
+
+      img {
+        width: 3rem;
+      }
+
+      .text {
+        h3 {
+          color: abs.$darkBlue;
+          font-size: 1.0625rem;
+        }
+
+        p {
+          color: abs.$desaturatedBlue;
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    &--btns {
+      margin-top: 1rem;
+
+      button:first-child {
+        font-family: abs.$font;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1rem;
+        border: 0;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: abs.$brightBlue;
+      }
+
+      button:last-child {
+        font-family: abs.$font;
+        font-weight: 700;
+        color: abs.$desaturatedBlue;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1rem;
+        border: 0;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: abs.$veryPaleBlue;
+      }
+    }
+  }
+}
